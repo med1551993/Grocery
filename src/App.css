@@ -18,6 +18,14 @@
   --color-orange: #f67453;
 }
 
+a {
+  text-decoration: none;
+  transition: 0.5s;
+  color: white;
+}
+
+
+
 /*================ Scrollbar ================*/
 ::-webkit-scrollbar {
   width: 7px;
@@ -172,12 +180,13 @@ header .close_btn {
 .homepage {
   width: 100%;
   height: 100vh;
-  background: url(https://static.vecteezy.com/system/resources/previews/026/467/058/non_2x/fresh-fruits-food-background-web-banner-with-copy-space-generative-ai-free-photo.jpg);
+  background: url(https://enistoresonline.com/wp-content/uploads/2020/07/grocery_slide-1.jpg);
   background-repeat: no-repeat;
   background-size:cover;
-
+background-position: center;
   display: flex;
   align-items: end;
+  
 }
 
 .content {
@@ -330,6 +339,32 @@ header .close_btn {
   }
 }
 
+/* ============= Deals ==============*/
+.deal{
+  display:flex;
+  align-items: center;
+  gap:10px;
+  height: 150px;
+  
+}
+
+.deals{
+  margin: 80px 10px 0 10px;
+  max-width: 1500px;
+  margin-inline: auto;
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.bottom{
+  display: flex;
+  flex-direction: column;
+  gap:10px;
+}
+
+
+
+
 /* ============= Products ==============*/
 .products {
   display: flex;
@@ -392,6 +427,7 @@ header .close_btn {
   display: flex;
   justify-content: space-between;
   flex-direction: column;
+  text-align: center;
 }
 
 .products_item h4 {
@@ -416,12 +452,12 @@ header .close_btn {
 
 .products_item .shopping {
   position: absolute;
-  right: 0px;
+  left: 0px;
   bottom: 0px;
   background-color: #48a90f;
   color: white;
   padding: 10px;
-  border-radius: 10px 0 10px 0;
+  border-radius: 0px 10px 0px 10px;
   transition: all 0.1s ease;
 }
 
@@ -439,16 +475,17 @@ header .close_btn {
 
 .products_item .offer {
   position: absolute;
-  top: 15px;
-  left: 0;
+  top: 0;
+  right: 20px;
   padding: 4px 1px;
-  width: 60px;
+  width: 40px;
+  height: 50px;
   text-align: center;
   background-color: var(--color-orange);
   color: white;
   font-size: 0.8rem;
   font-weight: 600;
-  clip-path: polygon(100% 0, 82% 51%, 100% 100%, 0% 100%, 0 50%, 0% 0%);
+  clip-path: polygon(50% 0%, 100% 0, 100% 100%, 49% 65%, 49% 65%, 0 100%, 0 0);
 }
 
 /*====================== About ================*/
@@ -485,6 +522,71 @@ header .close_btn {
 .about .about_content p {
   font-size: 1.5rem;
 }
+
+/*=================== Blog =============*/
+.container {
+  max-width: 1300px;
+  margin: auto;
+}
+
+.blog h2 {
+  color: var(--primaryColor);
+  font-size: 30px;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 60px;
+  margin-top: 20px;
+}
+
+.blog img {
+  width: 100%;
+}
+
+.blog .blog_card {
+  background-color: var(--primaryBackground);
+  border-radius: 10px;
+}
+
+.blog .text {
+  padding: 10px 0 10px 0;
+}
+
+.blog h3 {
+  font-weight: 600;
+}
+.blog label {
+  color: var(--primaryColor);
+  margin-top: 10px;
+  margin-bottom: 10px;
+  display: inline-block;
+}
+.grid3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.blog p {
+  color: var(--sliver);
+  font-size: 15px;
+  line-height: 30px;
+  margin: 20px 0;
+}
+.blog .img{
+  overflow: hidden;
+  padding: 0;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+.blog img{
+transition: 1s ease;
+}
+
+.blog img:hover{
+  scale: 1.1;
+}
+
 
 /*=================== Contact =============*/
 

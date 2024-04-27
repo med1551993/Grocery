@@ -5,15 +5,18 @@ import Categories from "./components/Categories";
 import Products from "./components/Products";
 import About from "./components/About";
 import Contact from "./components/Contact";
-
+import Deals from "./components/Deals";
+import Blog from "./components/Blog"
 function App() {
   return (
     <div className="App">
       <Navbar />
       <Home />
-      <Categories />
+      {/*  <Categories /> */}
+      <Deals />
       <Products />
-      <About />
+     {/*  <About /> */}
+     <Blog />
       <Contact />
     </div>
   );
