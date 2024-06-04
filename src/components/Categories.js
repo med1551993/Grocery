@@ -5,7 +5,6 @@ const Categories = () => {
     <div className="categories" id="categories">
       <div className="products_header">
         <h1>Browse Our Categories</h1>
-        {/* <button>SHOP NOW</button> */}
       </div>
       <div className="categories_cards">
         <div className="card">
