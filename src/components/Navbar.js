@@ -46,22 +46,18 @@ const Navbar = () => {
       <div className={`sidebar ${isOpen ? "open" : ""}`}>
         <FiX className="close_btn" size={30} onClick={closeSidebar} />
         <ul>
-          <li>
+          <li onClick={closeSidebar}>
             <a href="#home">Home</a>
           </li>
-          <li>
-            {" "}
-            <a href="#categories">Categories</a>
-          </li>
-          <li>
+          <li onClick={closeSidebar}>
             {" "}
             <a href="#products">Products</a>
           </li>
-          <li>
+          <li onClick={closeSidebar}>
             {" "}
-            <a href="#about">About</a>
+            <a href="#blog">Blog</a>
           </li>
-          <li>
+          <li onClick={closeSidebar}>
             {" "}
             <a href="#contact">Contact</a>
           </li>

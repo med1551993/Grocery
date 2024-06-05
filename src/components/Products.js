@@ -91,16 +91,25 @@ const Products = () => {
             <span>7.99$</span> /kg
           </h3>
           <span className="offer">-30%</span>
-          <h2>
-            Farm fresh organic
-            <br />
-            fruits 250g
-          </h2>
-          <h3>
-            <span>7.99$</span> /kg
-          </h3>
-          <span className="offer">-30%</span>
-            <HiMiniShoppingBag size={50} className="shopping" />
+          <HiMiniShoppingBag size={50} className="shopping" />
+        </div>
+        <div className="products_item">
+          <img
+            src="https://www.fervalle.com/wp-content/uploads/2022/07/Green-Broccoli-Transparent-Images-PNG.png"
+            alt="fruits"
+          />
+          <div>
+                <h2>
+                  Farm fresh organic
+                  <br />
+                  fruits 250g
+                </h2>
+                <h3>
+                  <span>7.99$</span> /kg
+                </h3>
+                <span className="offer">-30%</span>
+                 <HiMiniShoppingBag size={50} className="shopping" />
+          </div>
         </div>
       </div>
     </div>
